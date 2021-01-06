@@ -15,7 +15,7 @@ copyright: Copyright &copy; 2021 Trieu Phat Luu
 
 # Configuration
 theme:
-    name: "material"
+    name: "material"    
     logo: images/logo.png
     favicon: images/favicon.png
     font: Incosolata
@@ -40,7 +40,7 @@ extra:
       link: https://linkedin.com/in/trieuphatluu/
 extra_css:
   - css/colors.css
-    
+
 # Extensions
 markdown_extensions:
   - admonition
