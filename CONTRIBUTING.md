@@ -52,22 +52,14 @@ custom issue template. Please stick to the issue template.
 Unfortunately we are not able to investigate / fix bugs without a minimal
 reproduction scenario, so if we don't hear back from you we may close the issue.
 
-### Submitting a Pull Request (PR)
+### :zap: Submitting a Pull Request (PR)
 
 Search GitHub for an open or closed PR that relates to your submission. You
 don't want to duplicate effort. If you do not find a related issue or PR,
 go ahead.
 
-1. **Development**: Fork the project, set up the [development environment][4],
-  make your changes in a separate git branch and add descriptive messages to
-  your commits.
-
-2. **Build**: Before submitting a pull requests, [build the theme][5]. This is
-  a mandatory requirement for your PR to get accepted, as the theme should at
-  all times be installable through GitHub.
-
-3. **Pull Request**: After building the theme, commit the compiled output, push
-  your branch to GitHub and send a PR to `mkdocs-material:master`. If we
+1. **Pull Request**: After building the theme, commit the compiled output, push
+  your branch to GitHub and send a PR to `jetnanobot:master`. If we
   suggest changes, make the required updates, rebase your branch and push the
   changes to your GitHub repository, which will automatically update your PR.
 
