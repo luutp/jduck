@@ -5,6 +5,7 @@ PROJECT_NAME="${PWD##*/}"
 
 # -----------------------------------START----------------------------------------
 
+
 echo "pip install -r $1"
 if [[ -f "$1" ]]; then
     pip install -r $1
