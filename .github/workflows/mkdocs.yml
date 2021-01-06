@@ -14,7 +14,6 @@ jobs:
   make_mkdocs:
     name: Build mkdocs
     runs-on: ubuntu-latest
-    needs: merge_to_docs
     strategy:
       matrix:
         python-version: ['3.7']
