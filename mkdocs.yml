@@ -38,6 +38,8 @@ extra:
       link: https://github.com/trieuphatluu    
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/trieuphatluu/
+extra_css:
+  - css/colors.css
     
 # Extensions
 markdown_extensions:
@@ -98,9 +100,3 @@ nav:
   - Reference:      
       - Contributing: CONTRIBUTING.md
       - Changes: CHANGELOG.md      
-
-extra_css:
-  - css/colors.css
-
-google_analytics:
-  - auto
