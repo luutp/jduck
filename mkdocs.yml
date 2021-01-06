@@ -19,8 +19,9 @@ theme:
     logo: images/logo.png
     favicon: images/favicon.png
     font: Incosolata
-    palette:
-        scheme: nvgreen 
+    palette:      
+      primary: orange
+      accent: blue
     features:
       - navigation.expand
 
@@ -38,6 +39,7 @@ extra:
       link: https://github.com/trieuphatluu    
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/trieuphatluu/
+  generator: false
 extra_css:
   - css/colors.css
 
