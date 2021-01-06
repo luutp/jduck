@@ -1,17 +1,8 @@
--r ./build_requirements.txt
-recommonmark
-sphinx
-sphinx_markdown_tables
-# sphinx themes. 
-# https://sphinx-themes.org/#theme-sphinx-enos-theme
-sphinx_rtd_theme
-stanford-theme
-sphinx-audeering-theme
-# for google docstring
-sphinxcontrib-napoleon
 # mkdocs
 mkdocs>=1.1
 Pygments>=2.4
 markdown>=3.2
 pymdown-extensions>=7.0
 mkdocs-material-extensions>=1.0
+mkdocs-minify-plugin>=0.3
+mkdocs-redirects>=1.0
