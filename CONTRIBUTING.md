@@ -36,9 +36,9 @@ Discussions are where we have conversations.
 
 If you'd like help troubleshooting a docs PR you're working on, have a great new idea, or want to share something amazing you've learned in our docs, join us in [discussions](https://github.com/trieuphatluu/jetnanobot/discussions).
 
-## Submission guidelines
+## :memo: Submission guidelines
 
-### Submitting an issue
+### :sparkles: Submitting an issue
 
 Before you submit an issue, please search the issue tracker, maybe an issue for
 your problem already exists and the discussion might inform you of workarounds
