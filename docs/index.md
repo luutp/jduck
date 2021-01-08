@@ -7,3 +7,5 @@
 [Subscribe to our mailing list](#){: .md-button }
 
 :beetle: Debug this
+
+:envelope: tpluu2207@gmail.com
