@@ -88,7 +88,8 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Getting Started: getting_started.md
+  - Getting Started: getting_started.md  
+  - Bill of Materials: BOM.md  
   - Hardware Setup: hardware_setup.md
   - Software Setup:
       - Using SD Card Image: software_setup/sd_card.md
