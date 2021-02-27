@@ -34,17 +34,16 @@ from setuptools import setup
 
 
 setup(
-    name="jetnanobot",
+    name="jduck",
     version="0.1.0",
-    author="Trieu Phat Luu",
-    author_email="tpluu2207@gmail.com",
+    author="luutp",
+    author_email="luubot2207@gmail.com",
     description="",
-    keywords="Object Detection, tensorflow",
+    keywords="Object Detection, tensorflow, jetson Nano, jduck",
     license="Apache",
-    url="https://github.com/trieuphatluu/",
+    url="https://github.com/luutp/",
     packages=find_packages(),
     install_requires=[],
-    python_requires=">=3.6.0",
     include_package_data=True,
     test_suite="tests",
     zip_safe=False,
@@ -56,8 +55,7 @@ setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
         "Natural Language :: English",
-        "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 2.7",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
 )
