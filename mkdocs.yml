@@ -1,13 +1,13 @@
 # Project information
-site_name: jetNanoBot
-site_url: https://trieuphatluu.github.io/jetnanoBot/
-site_author: Phat Luu
+site_name: jDuck
+site_url: https://luu.github.io/jduck/
+site_author: TP-Luu
 site_description: >-
   An open-source robot platform for learning robotics and AI with NVIDIA Jeston Nano board.
 
 # Repository
-repo_name: trieuphatluu/jetnanobot
-repo_url: https://github.com/trieuphatluu/jetnanobot
+repo_name: luutp/jduck
+repo_url: https://github.com/luutp/jduck
 edit_uri: blob/master/docs
 
 # Copyright
@@ -36,7 +36,7 @@ use_directory_urls: false
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/trieuphatluu    
+      link: https://github.com/luutp
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/trieuphatluu/
   generator: false
