@@ -125,6 +125,5 @@ ENV/
 *.ckpt*
 
 .vscode/
-Scripts/
 setup.cfg
 .editorconfig
