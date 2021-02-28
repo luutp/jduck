@@ -1,25 +1,20 @@
-FROM nvidia/cuda:10.1-cudnn7-runtime-ubuntu18.04
-LABEL maintainer="Trieu Phat Luu""
-LABEL repository="jetnanobot"
+ARG BASE_IMAGE=jetbot-models:jp44
+FROM ${BASE_IMAGE}
 
-RUN apt update && \
-    apt install -y bash \
-    build-essential \
-    git \
-    curl \
-    ca-certificates \
-    python3 \
-    python3-pip && \
-    rm -rf /var/lib/apt/lists
-
-RUN python3 -m pip install --no-cache-dir --upgrade pip && \
-    python3 -m pip install --no-cache-dir \
-    mkl \
-    tensorflow
-
+ARG JUPYTER_PASSWORD=jduck
+ENV JUPYTER_WORKDIR=/workspace
 WORKDIR /workspace
-COPY . jetnanobot/
-RUN cd jetnanobot/ && \
-    python3 -m pip install --no-cache-dir .
 
-CMD ["/bin/bash"]
+RUN apt-get update && \
+    apt-get install -y ssh
+
+# ====================
+# SET JUPYTER PASSWORD
+# ====================
+ENV JUPYTER_PASSWORD=${JUPYTER_PASSWORD}
+RUN jupyter lab --generate-config -y
+RUN python3 -c "from notebook.auth.security import set_password; set_password('${JUPYTER_PASSWORD}', '/root/.jupyter/jupyter_notebook_config.json')"    
+
+ENV SHELL /bin/bash
+
+CMD cd $JUPYTER_WORKDIR && jupyter lab --ip 0.0.0.0 --port 8888 --allow-root
