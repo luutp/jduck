@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.3-pth1.6-py3
+ARG BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.4-pth1.6-py3
 FROM ${BASE_IMAGE}
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -65,7 +65,7 @@ RUN apt-get update
 RUN apt-get install -y curl
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs libffi-dev 
-RUN pip3 install jupyter jupyterlab
+RUN pip3 install jupyter jupyterlab==2.2.6
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 
@@ -92,13 +92,13 @@ RUN cd ${TORCH2TRT_REPO_DIR} && \
     python3 setup.py install
 
 #===================================INSTALL JDUCK======================================
-RUN apt-get update && apt-get install -y busybox
-# Enable PWM mix on Jetson Nano 
-RUN busybox devmem 0x700031fc 32 0x45
-RUN busybox devmem 0x6000d504 32 0x2
-RUN busybox devmem 0x70003248 32 0x46
-RUN busybox devmem 0x6000d100 32 0x00
+# RUN apt-get update && apt-get install -y busybox
+# # Enable PWM mix on Jetson Nano 
+# RUN sudo busybox devmem 0x700031fc 32 0x45
+# RUN sudo busybox devmem 0x6000d504 32 0x2
+# RUN sudo busybox devmem 0x70003248 32 0x46
+# RUN sudo busybox devmem 0x6000d100 32 0x00
 # Install jduck package
-ENV JDUCK_REPO_DIR=/opt/jduck
-COPY . ${JDUCK_REPO_DIR}
-RUN cd ${JDUCK_REPO_DIR} && python3 setup.py install
+# ENV JDUCK_REPO_DIR=/opt/jduck
+# COPY . ${JDUCK_REPO_DIR}
+# RUN cd ${JDUCK_REPO_DIR} && python3 setup.py install
