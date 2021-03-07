@@ -4,7 +4,7 @@ DOCKER_FOLDER="$( cd "$( dirname "${BASH_SOURCE[0]}")/.." >/dev/null 2>&1 && pwd
 # ----------------------------------INCLUDE---------------------------------------
 source ${DOCKER_FOLDER}/configure.sh
 # ----------------------------------DEFINE----------------------------------------
-WORKSPACE=$1
+WORKSPACE=${1:-$HOME}
 JDUCK_CAMERA=${2:-opencv_gst_camera}
 
 sudo docker run -it -d \

@@ -91,6 +91,8 @@ RUN cd ${TORCH2TRT_REPO_DIR} && \
     cd torch2trt && \
     python3 setup.py install
 
+# ================================INSTALL PYTHON PACKAGES=============================
+RUN pip3 install Jetson.GPIO
 #===================================INSTALL JDUCK======================================
 # RUN apt-get update && apt-get install -y busybox
 # # Enable PWM mix on Jetson Nano 
