@@ -38,20 +38,12 @@ setup(
     version="0.1.0",
     author="luutp",
     author_email="luubot2207@gmail.com",
-<<<<<<< HEAD
-    description="",
-=======
     description="JDuck robot platform powered by Jetson Nano",
->>>>>>> 74cc23c1f89b39f3af0acb989ddfe5a6f6ed1f98
     keywords="Object Detection, tensorflow, jetson Nano, jduck",
     license="Apache",
-    url="https://github.com/luutp/",
+    url="https://github.com/luutp/jduck",
     packages=find_packages(),
-<<<<<<< HEAD
     install_requires=[],
-=======
-    install_requires=['Jetson.GPIO'],
->>>>>>> 74cc23c1f89b39f3af0acb989ddfe5a6f6ed1f98
     include_package_data=True,
     test_suite="tests",
     zip_safe=False,
@@ -63,11 +55,7 @@ setup(
         "License :: OSI Approved :: Apache Software License",
         "Operating System :: OS Independent",
         "Natural Language :: English",
-<<<<<<< HEAD
-        "Programming Language :: Python :: 2.7",
-=======
         "Programming Language :: Python",
->>>>>>> 74cc23c1f89b39f3af0acb989ddfe5a6f6ed1f98
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
 )

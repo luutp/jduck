@@ -1,21 +1,27 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''
+"""
 jduck.py
 Description:
 
 Author: luutp
 Contact: luubot2207@gmail.com
 Created on: 2021/02/27
-'''
+"""
 
+# Utilities
 # %%
 # ================================IMPORT PACKAGES====================================
+
+# Utilities
 from traitlets.config.configurable import SingletonConfigurable
 
-from DCMotor import DCMotor
+# Custom Packages
+from jduck.DCMotor import DCMotor
+
 
 # ================================================================================
+
 
 class JDuck(SingletonConfigurable):
     def __init__(self, *args, **kwargs):

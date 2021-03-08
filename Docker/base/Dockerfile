@@ -94,13 +94,15 @@ RUN cd ${TORCH2TRT_REPO_DIR} && \
 # ================================INSTALL PYTHON PACKAGES=============================
 RUN pip3 install Jetson.GPIO
 #===================================INSTALL JDUCK======================================
-# RUN apt-get update && apt-get install -y busybox
+RUN apt-get update && apt-get install -y busybox
 # # Enable PWM mix on Jetson Nano 
 # RUN sudo busybox devmem 0x700031fc 32 0x45
 # RUN sudo busybox devmem 0x6000d504 32 0x2
 # RUN sudo busybox devmem 0x70003248 32 0x46
 # RUN sudo busybox devmem 0x6000d100 32 0x00
+
 # Install jduck package
-# ENV JDUCK_REPO_DIR=/opt/jduck
-# COPY . ${JDUCK_REPO_DIR}
-# RUN cd ${JDUCK_REPO_DIR} && python3 setup.py install
+RUN echo "\e[42m Install jduck python package \e[0m"
+ENV JDUCK_REPO_DIR=/opt/jduck
+COPY . ${JDUCK_REPO_DIR}
+RUN cd ${JDUCK_REPO_DIR} && python3 setup.py install
