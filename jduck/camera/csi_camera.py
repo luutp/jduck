@@ -16,9 +16,9 @@ from .camera_base import CameraBase
 
 
 class OpenCvGstCamera(CameraBase):
-    
+
     value = traitlets.Any()
-    
+
     # config
     width = traitlets.Integer(default_value=224).tag(config=True)
     height = traitlets.Integer(default_value=224).tag(config=True)
@@ -36,14 +36,13 @@ class OpenCvGstCamera(CameraBase):
             re, image = self.cap.read()
 
             if not re:
-                raise RuntimeError('Could not read image from camera.')
+                raise RuntimeError("Could not read image from camera.")
 
             self.value = image
             self.start()
         except:
             self.stop()
-            raise RuntimeError(
-                'Could not initialize camera.  Please see error trace.')
+            raise RuntimeError("Could not initialize camera.  Please see error trace.")
 
         atexit.register(self.stop)
 
@@ -54,28 +53,44 @@ class OpenCvGstCamera(CameraBase):
                 self.value = image
             else:
                 break
-                
+
     def _gst_str(self):
-        return 'nvarguscamerasrc sensor-mode=3 ! video/x-raw(memory:NVMM), width=%d, height=%d, format=(string)NV12, framerate=(fraction)%d/1 ! nvvidconv ! video/x-raw, width=(int)%d, height=(int)%d, format=(string)BGRx ! videoconvert ! appsink' % (
-                self.capture_width, self.capture_height, self.fps, self.width, self.height)
-    
+        return (
+            "nvarguscamerasrc ! "
+            "video/x-raw(memory:NVMM), "
+            "width=(int)%d, height=(int)%d, "
+            "format=(string)NV12, framerate=(fraction)%d/1 ! "
+            "nvvidconv flip-method=%d ! "
+            "video/x-raw, width=(int)%d, height=(int)%d, format=(string)BGRx ! "
+            "videoconvert ! "
+            "video/x-raw, format=(string)BGR ! appsink"
+            % (
+                self.capture_width,
+                self.capture_height,
+                self.capture_fps,
+                self.flip_method,
+                self.width,
+                self.height,
+            )
+        )
+
     def start(self):
         if not self.cap.isOpened():
             self.cap.open(self._gst_str(), cv2.CAP_GSTREAMER)
-        if not hasattr(self, 'thread') or not self.thread.isAlive():
+        if not hasattr(self, "thread") or not self.thread.isAlive():
             self.thread = threading.Thread(target=self._capture_frames)
             self.thread.start()
 
     def stop(self):
-        if hasattr(self, 'cap'):
+        if hasattr(self, "cap"):
             self.cap.release()
-        if hasattr(self, 'thread'):
+        if hasattr(self, "thread"):
             self.thread.join()
-            
+
     def restart(self):
         self.stop()
         self.start()
-        
+
     @staticmethod
     def instance(*args, **kwargs):
         return OpenCvGstCamera(*args, **kwargs)

@@ -1,3 +1,6 @@
+# Standard Packages
+import os
+
 # Utilities
 import traitlets
 
@@ -14,9 +17,7 @@ class CameraBase(traitlets.HasTraits):
         if hasattr(self, "_widget"):
             return self._widget  # cache widget, so we don't duplicate links
         from ipywidgets import Image
-
-        # Custom Packages
-        from jduck.image import bgr8_to_jpeg
+        from jetbot.image import bgr8_to_jpeg
 
         image = Image()
         traitlets.dlink((self, "value"), (image, "value"), transform=bgr8_to_jpeg)
