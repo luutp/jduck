@@ -1,5 +1,7 @@
+ipykernel
 coverage
 flake8==3.8.3
 interrogate
+black
 isort==5.5.3
 pytest

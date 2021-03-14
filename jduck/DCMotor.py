@@ -12,9 +12,13 @@ Created on: 2021/02/27
 # %%
 # ================================IMPORT PACKAGES====================================
 
-import Jetson.GPIO as GPIO
+# Utilities
 import traitlets
 from traitlets.config.configurable import Configurable
+
+import Jetson.GPIO as GPIO
+
+
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 

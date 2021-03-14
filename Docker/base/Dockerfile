@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.3-pth1.6-py3
+ARG BASE_IMAGE=nvcr.io/nvidia/l4t-pytorch:r32.4.4-pth1.6-py3
 FROM ${BASE_IMAGE}
 
 ENV DEBIAN_FRONTEND=noninteractive
@@ -45,8 +45,7 @@ RUN echo "deb https://repo.download.nvidia.com/jetson/common r32.4 main" > /etc/
     && rm -rf /var/lib/apt/lists/*
 
 # =================================== INSTALL GSTREAME=================================
-RUN apt-get update && \
-    apt-get install -y \
+RUN apt-get update && apt-get install -y \
     libwayland-egl1 \
     gstreamer1.0-plugins-bad \
     libgstreamer-plugins-bad1.0-0 \
@@ -55,22 +54,23 @@ RUN apt-get update && \
 
 # ============================== INSTALL JUPYTER RELATED ==============================
 # Install traitlets (master, to support the unlink() method)
-RUN echo -e "\e[48;5;172m Install traitlets \e[0m"
+
+RUN echo -e "\e[35m Install traitlets \e[0m"
 #sudo python3 -m pip install git+https://github.com/ipython/traitlets@master
 RUN python3 -m pip install git+https://github.com/ipython/traitlets@dead2b8cdde5913572254cf6dc70b5a6065b86f8
 
 # Install jupyter lab
-RUN echo -e "\e[48;5;172m Install Jupyter Lab \e[0m"
-RUN apt-get update
-RUN apt-get install -y curl
+RUN echo -e "\e[35m Install Jupyter Lab \e[0m"
+RUN apt-get update && apt-get install -y \
+    curl
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
 RUN apt-get install -y nodejs libffi-dev 
-RUN pip3 install jupyter jupyterlab
+RUN pip3 install jupyter jupyterlab==2.2.6
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 
 # Install jupyter_clickable_image_widget
-RUN echo "\e[42m Install jupyter_clickable_image_widget \e[0m"
+RUN echo -e "\e[35m Install jupyter_clickable_image_widget \e[0m"
 RUN cd && \
     apt-get install -y libssl1.0-dev && \
     git clone https://github.com/jaybdub/jupyter_clickable_image_widget && \
@@ -81,8 +81,15 @@ RUN cd && \
     jupyter lab build
     
 # ============================ INSTALL MISC DEPENDENCIES  ============================
-RUN apt-get update && apt-get install -y supervisor unzip
+RUN apt-get update && apt-get install -y \
+    supervisor \
+    unzip \
+    busybox
+
 RUN apt install -y python3-smbus && pip3 install pyzmq
+
+RUN echo -e "\e[35m Install Jetson.GPIO \e[0m"
+RUN pip3 install Jetson.GPIO
 
 #===================================INSTALL TORCH2TRT=================================
 ENV TORCH2TRT_REPO_DIR=/opt/
@@ -91,14 +98,17 @@ RUN cd ${TORCH2TRT_REPO_DIR} && \
     cd torch2trt && \
     python3 setup.py install
 
+# ==================================INSTALL JETCAM=====================================
+RUN echo -e "\e[35m Install jetcam python package \e[0m"
+ENV JETCAM_REPO_DIR=/opt/
+RUN cd ${JETCAM_REPO_DIR} && \
+    git clone https://github.com/NVIDIA-AI-IOT/jetcam && \
+    cd jetcam && \
+    python3 setup.py install
+
 #===================================INSTALL JDUCK======================================
-RUN apt-get update && apt-get install -y busybox
-# Enable PWM mix on Jetson Nano 
-RUN busybox devmem 0x700031fc 32 0x45
-RUN busybox devmem 0x6000d504 32 0x2
-RUN busybox devmem 0x70003248 32 0x46
-RUN busybox devmem 0x6000d100 32 0x00
 # Install jduck package
+RUN echo -e "\e[35m Install jduck python package \e[0m"
 ENV JDUCK_REPO_DIR=/opt/jduck
 COPY . ${JDUCK_REPO_DIR}
 RUN cd ${JDUCK_REPO_DIR} && python3 setup.py install
