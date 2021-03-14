@@ -8,7 +8,7 @@ site_description: >-
 # Repository
 repo_name: luutp/jduck
 repo_url: https://github.com/luutp/jduck
-edit_uri: blob/master/docs
+edit_uri: blob/develop/docs
 
 # Copyright
 copyright: Copyright &copy; 2021 Trieu Phat Luu
@@ -16,7 +16,7 @@ copyright: Copyright &copy; 2021 Trieu Phat Luu
 # Configuration
 theme:
     name: "material"    
-    logo: images/logo.png
+    logo: images/logo.jpg
     favicon: images/favicon.png
     font: Incosolata
     palette:      
