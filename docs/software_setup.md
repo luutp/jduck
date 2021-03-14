@@ -7,6 +7,10 @@ You can use your existing Jetson Nano set up (microSD card), as long as you have
     For this, we'll assume you've set up your Jetson Nano using the **online Getting Started guide**.
      - [Getting Started with Jetson Nano 2GB Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit)
 
-???+ warning
+??? warning warning message
+    warning info
+    check
+
+??? question question message
     warning info
     check
