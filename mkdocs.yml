@@ -16,7 +16,7 @@ copyright: Copyright &copy; 2021 Trieu Phat Luu
 # Configuration
 theme:
     name: "material"    
-    logo: images/logo.png
+    logo: images/jduck_logo.png
     favicon: images/favicon.png
     font: Incosolata
     palette:      
