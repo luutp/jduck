@@ -1,5 +1,7 @@
 # Jetson Nano Bot
 
+## Description
+
 <p align="center">
 <img src="images/jetsonnano_2gb.jpg" width=80% alt="jetson_nano_2gb">
 </p>
