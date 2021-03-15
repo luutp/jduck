@@ -112,9 +112,3 @@ RUN echo -e "\e[35m Install jduck python package \e[0m"
 ENV JDUCK_REPO_DIR=/opt/jduck
 COPY . ${JDUCK_REPO_DIR}
 RUN cd ${JDUCK_REPO_DIR} && python3 setup.py install
-
-# # Enable PWM mix on Jetson Nano 
-RUN echo -e "\e[35m Enable PWM on Jetson Nano \e[0m"
-COPY ./Docker/base/enable_pwm.sh /
-RUN chmod +x /enable_pwm.sh
-CMD ["/enable_pwm.sh"]

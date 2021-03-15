@@ -1,7 +1,9 @@
 #!/bin/bash
 # DEFINES
-DOCKER_FOLDER="$( cd "$( dirname "${BASH_SOURCE[0]}")/.." >/dev/null 2>&1 && pwd )"
+DOCKER_FOLDER=${PWD}
+echo -e "\e[35m Docker Folder: ${DOCKER_FOLDER} \e[0m"
 # ----------------------------------INCLUDE---------------------------------------
 source $DOCKER_FOLDER/configure.sh
 # ----------------------------------START----------------------------------------
-./jupyter/enable.sh
+cd jupyter && chmod +x enable.sh && bash ./enable.sh && cd ..
+cd enable_pwm && chmod +x enable.sh && bash ./enable.sh && cd ..
