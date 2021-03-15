@@ -6,7 +6,7 @@
 <img src="/images/jduck.jpeg" width=80% alt="jDuck">
 </p> -->
 
-![jduck](/images/jduck.jpeg){ align=center }
+![jduck](/images/jduck.jpeg)
 
 [:fontawesome-solid-paper-plane: Submit](#){ .md-button .md-button--primary }
 
