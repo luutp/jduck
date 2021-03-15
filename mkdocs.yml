@@ -1,6 +1,6 @@
 # Project information
 site_name: jDuck
-site_url: https://luu.github.io/jduck/
+site_url: https://luutp.github.io/jduck/
 site_author: TP-Luu
 site_description: >-
   An open-source robot platform for learning robotics and AI with NVIDIA Jeston Nano board.
@@ -11,11 +11,13 @@ repo_url: https://github.com/luutp/jduck
 edit_uri: blob/develop/docs
 
 # Copyright
-copyright: Copyright &copy; 2021 Trieu Phat Luu
+copyright: Copyright &copy; 2021 Luu TP and Nghia Pham
 
 # Configuration
 theme:
-    name: "material"    
+    name: "material"
+    icon:
+      repo: fontawesome/brands/github
     logo: images/jduck_logo.png
     favicon: images/favicon.ico
     font: Incosolata
@@ -24,10 +26,15 @@ theme:
       accent: blue
     features:
       - navigation.expand
+      - navigation.tabs
+      - toc.integrate
+      - search.suggest
+      - search.highlight
 
 # Plugin
 plugins:
-  - search
+  - search:
+      lang: en
   - minify:
       minify_html: true
 use_directory_urls: false
@@ -36,9 +43,11 @@ use_directory_urls: false
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/luutp
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/trieuphatluu/
+      link: https://github.com/luutp/jduck
+      name: jduck Repo
+    - icon: fontawesome/brands/amazon
+      link: https://amazon.com
+      name: jDuck on Amazon
   generator: false
 extra_css:
   - css/colors.css
@@ -54,6 +63,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      toc_depth: 3
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem:
@@ -64,7 +74,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      linenums: false
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink:
@@ -88,9 +99,8 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Getting Started: getting_started.md  
-  - Bill of Materials: BOM.md  
-  - Hardware Setup: hardware_setup.md
+  - Hardware Setup:
+      - Bill of Materials: hardware_setup/BOM.md  
   - Software Setup:
       - Jetson Nano Setup: software_setup/jetson_nano_setup.md      
       - JDuck Setup: software_setup/jduck_setup.md      
