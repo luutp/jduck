@@ -2,10 +2,11 @@
 
 ## Description
 
-<p align="center">
+<!-- <p align="center">
 <img src="/images/jduck.jpeg" width=80% alt="jDuck">
-</p>
+</p> -->
 
+![jduck](/images/jduck.jpeg){ align=center }
 
 [:fontawesome-solid-paper-plane: Submit](#){ .md-button .md-button--primary }
 
