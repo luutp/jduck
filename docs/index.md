@@ -2,18 +2,19 @@
 
 ## Description
 
-<!-- <p align="center">
-<img src="/images/jduck.jpeg" width=80% alt="jDuck">
-</p> -->
+???+ example "Example"    
+    === "Tab 1 Title"
+        content 1
+    === "Tab 2 Title"
+        Content 2
+
+``` python linenums="1"
+import tensorflow as tf
+```
 
 ![jduck](images/jduck.jpeg)
 
-[:fontawesome-solid-paper-plane: Submit](#){ .md-button .md-button--primary }
-
-<div style="text-align: center;">
-    <a href="https://github.com/NVIDIA-AI-IOT/jetbot" class="md-button">Go to GitHub</a>
-    <a href="getting_started.html" class="md-button md-button--primary">Get Started</a>
-</div>
+[:fontawesome-brands-amazon: Buy](https://amazon.com){ .md-button .text-center }
 
 !!! example
 

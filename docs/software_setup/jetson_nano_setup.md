@@ -24,3 +24,6 @@ You can use your existing Jetson Nano set up (microSD card), as long as you have
     [Write Image to the microSD card](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#write){:target="_blank"}
 
 ### Step 2: Setup and First Boot
+<p align="center">
+<img src="images/.jpg" width=80% alt="">
+</p>
