@@ -5,10 +5,10 @@ on:
   push:
     branches:
       - master
-      - develop      
+      - wiki 
   pull_request:
     branches:
-      - develop
+      - wiki
 
 jobs:      
   make_mkdocs:
