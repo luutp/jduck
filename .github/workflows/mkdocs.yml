@@ -24,7 +24,7 @@ jobs:
         python-version: ${{ matrix.python-version }}    
     - uses: actions/checkout@v2
       with:
-        ref: develop #checkout at docs branch          
+        ref: wiki #checkout at docs branch          
     - name: update pip
       run: |
         python -m pip install --upgrade pip
