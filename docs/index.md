@@ -7,7 +7,8 @@
 :fontawesome-brands-amazon: Buy
 </a>
 
-!!! summary "Summary"
+## Product Summary
+!!! summary "Why jDuck?"
 
     - [x] **No need for hours of assembly**. Fully assembled and individually tested to ensure excellent working condition right out of the box..
 
@@ -18,8 +19,6 @@
     - [x] **Design and assemble in the USA**, the product is fully supported.
 
     - [x] **An affordable and friendly platform** to deploy many open-source projects on Github for collision avoidance, object recoginition, visioned-based line tracking.
-
-## Overview
 
 With the blooming of artificial intelligence technology in recent years, there is an increased demand in building AI robots for numerous practical applications such as in helping with every day chores or automating more complex and high-level tasks in manufacturing sectors. That attracts a lot of students and enthusiasts to start exploring and learning about AI robotics. Yet, the threshold of creation is quite high. Either the cost could be prohibitive or building a robot from scratch is taking too much time and effort. To address this gap, we provide a reliable and reasonably priced robot to help students and enthusiasts starting their hands-on experience .
 
@@ -32,10 +31,14 @@ To ensure an excellent working condition right out of the box, products are indi
 
 The product includes:
 
-- A large rechargeable lithium-ion battery for hours of usage and easy charging.
-- 8MP 160° FOV camera with adjustable holder angle
-- Thoughtful multi-part body design that eases the robot’s operations and provides flexibilities in situations
-- (2) Motors, (2) Wheels, (1) Motor driver, (1) Rolling Ball Transfer, Connecting wires, and (1)Micro-USB charging cable
+- [Commercially available parts](hardware_setup/commercial_parts.md)
+- [Custom design and 3D-printed parts](hardware_setup/custom_parts.md)
+
+<div style="text-align:left"> 
+	<img src="../images/wVePG2Dw.png" width=80% alt="jDuck"> 
+	<figcaption>jDuck components</figcaption> 
+</div>
+
 
 ## Open-source software developed for NVIDIA® Jetson Nano 2GB developer Kit
 

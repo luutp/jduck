@@ -111,7 +111,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Hardware Setup:
-      - Commercially Available Parts: hardware_setup/common_parts.md  
+      - Commercially Available Parts: hardware_setup/commercial_parts.md  
       - Custom Built Parts: hardware_setup/custom_parts.md  
       - 3D-print Settings: hardware_setup/3dprint_settings.md 
       - Electrical Wiring: hardware_setup/electrical_wiring.md  
