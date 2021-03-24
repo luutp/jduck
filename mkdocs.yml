@@ -57,7 +57,7 @@ extra:
       link: https://github.com/luutp/jduck
       name: jduck Repo
     - icon: fontawesome/brands/amazon
-      link: https://amazon.com
+      link: https://www.amazon.com/dp/B08ZVBCT26?fbclid=IwAR0gwjj-hSZsaB4kF6pJWJAcfVp061Cgqmoh9smIQtiU6nPkkdqvsUPWj4I
       name: jDuck on Amazon
   generator: false
 extra_css:
@@ -111,10 +111,17 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Hardware Setup:
-      - Bill of Materials: hardware_setup/BOM.md  
+      - Commercially Available Parts: hardware_setup/common_parts.md  
+      - Custom Built Parts: hardware_setup/custom_parts.md  
+      - 3D-print Settings: hardware_setup/3dprint_settings.md 
+      - Electrical Wiring: hardware_setup/electrical_wiring.md  
+      - Install a Camera Module: hardware_setup/install_camera_module.md  
   - Software Setup:
       - Jetson Nano Setup: software_setup/jetson_nano_setup.md      
       - JDuck Setup: software_setup/jduck_setup.md      
+      - Docker: 
+        - jupyter: software_setup/docker.md      
+        - Enable PWM: software_setup/docker/docker_enable_pwm.md      
   - Examples: 
       - Basic Motion: examples/basic_motion.md
       - Teleoperation: examples/teleoperation.md
