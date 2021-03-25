@@ -37,8 +37,6 @@ theme:
     
     features:
       - navigation.expand
-      - navigation.tabs
-      - toc.integrate
       - search.suggest
       - search.highlight
 

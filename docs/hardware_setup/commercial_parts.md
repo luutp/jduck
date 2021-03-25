@@ -14,7 +14,7 @@
     <tr>    
         <td style="text-align:left">Camera</td>
         <td style="text-align:center"> 
-	    <img src="../images/61XNg3kK1ZL._AC_SL1500_.jpg" width=30% alt="61XNg3kK1ZL._AC_SL1500_">
+	    <img src="../images/61XNg3kK1ZL._AC_SL1500_.jpg" width=40% alt="61XNg3kK1ZL._AC_SL1500_">
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/2MwgSkg" target="_blank" > Amazon</a></td>
         <td style="text-align:left">1</td>
@@ -23,7 +23,7 @@
     <tr>    
         <td style="text-align:left">Power Bank</td>
         <td style="text-align:center"> 
-	    <img src="../images/519ee6gX6CL._AC_SL1001_.jpg" width=30% alt="519ee6gX6CL._AC_SL1001_"> 
+	    <img src="../images/519ee6gX6CL._AC_SL1001_.jpg" width=40% alt="519ee6gX6CL._AC_SL1001_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/3apn4Co" target="_blank" > Amazon</a></td>
         <td style="text-align:left">1</td>
@@ -32,7 +32,7 @@
     <tr>    
         <td style="text-align:left">Motor Driver</td>
         <td style="text-align:center"> 
-	    <img src="../images/61Nx9g4zbNL._AC_SL1001_.jpg" width=30% alt="61Nx9g4zbNL._AC_SL1001_"> 
+	    <img src="../images/61Nx9g4zbNL._AC_SL1001_.jpg" width=40% alt="61Nx9g4zbNL._AC_SL1001_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/3re0X8S" target="_blank" > Amazon</a></td>
         <td style="text-align:left">1</td>
@@ -41,7 +41,7 @@
     <tr>    
         <td style="text-align:left">TT Motor + Wheel</td>
         <td style="text-align:center"> 
-        <img src="../images/71vTHuViLYL._AC_SL1500_.jpg" width=30% alt="71vTHuViLYL._AC_SL1500_"> 
+        <img src="../images/71vTHuViLYL._AC_SL1500_.jpg" width=40% alt="71vTHuViLYL._AC_SL1500_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/39Lk04F" target="_blank" > Amazon</a></td>
         <td style="text-align:left">2</td>
@@ -50,7 +50,7 @@
     <tr>    
         <td style="text-align:left">Rolling Ball Transfer</td>
         <td style="text-align:center"> 
-	    <img src="../images/61nZlKUZg3L._SL1024_.jpg" width=30% alt="61nZlKUZg3L._SL1024_"> 
+	    <img src="../images/61nZlKUZg3L._SL1024_.jpg" width=40% alt="61nZlKUZg3L._SL1024_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/2MvQQO5" target="_blank" > Amazon</a></td>
         <td style="text-align:left">1</td>
@@ -59,7 +59,7 @@
     <tr>    
         <td style="text-align:left">NVIDIA Jetson Nano 2GB *</td>
         <td style="text-align:center"> 
-	    <img src="../images/7143lurIrJL._AC_SL1500_.jpg" width=30% alt="7143lurIrJL._AC_SL1500_"> 
+	    <img src="../images/7143lurIrJL._AC_SL1500_.jpg" width=40% alt="7143lurIrJL._AC_SL1500_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/2MQ1rDh" target="_blank" > Amazon</a></td>
         <td style="text-align:left">1</td>
@@ -69,7 +69,7 @@
     <tr>    
         <td style="text-align:left">MicroSD Card *</td>
         <td style="text-align:center"> 
-	    <img src="../images/617NtexaW2L._AC_SL1500_.jpg" width=30% alt="617NtexaW2L._AC_SL1500_"> 
+	    <img src="../images/617NtexaW2L._AC_SL1500_.jpg" width=40% alt="617NtexaW2L._AC_SL1500_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/3axdWMb" target="_blank" > Amazon</a></td>
         <td style="text-align:left">1</td>
@@ -105,7 +105,7 @@
     <tr>    
         <td style="text-align:left">USB Type A</td>
         <td style="text-align:center"> 
-	        <img src="../images/71wgtGRGYpL._AC_SL1500_.jpg" width=30% alt="71wgtGRGYpL._AC_SL1500_"> 
+	        <img src="../images/71wgtGRGYpL._AC_SL1500_.jpg" width=40% alt="71wgtGRGYpL._AC_SL1500_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/3pIlSAC" target="_blank" > Amazon</a></td>
         <td style="text-align:left">1</td>
@@ -130,7 +130,7 @@
     <tr>    
         <td style="text-align:left">M3 x 8mm</td>
         <td style="text-align:center"> 
-	        <img src="../images/51nr2BxZ7PUL._AC_SL1076_.jpg" width=30% alt="51nr2BxZ7PUL._AC_SL1076_"> 
+	        <img src="../images/51nr2BxZ7PUL._AC_SL1076_.jpg" width=40% alt="51nr2BxZ7PUL._AC_SL1076_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/36CPCHA" target="_blank" > Amazon</a></td>
         <td style="text-align:left">8</td>
@@ -139,7 +139,7 @@
     <tr>    
         <td style="text-align:left">M3 x 10mm</td>
         <td style="text-align:center"> 
-	        <img src="../images/51nr2BxZ7PUL._AC_SL1076_.jpg" width=30% alt="51nr2BxZ7PUL._AC_SL1076_"> 
+	        <img src="../images/51nr2BxZ7PUL._AC_SL1076_.jpg" width=40% alt="51nr2BxZ7PUL._AC_SL1076_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/36EJTB2" target="_blank" > Amazon</a></td>
         <td style="text-align:left">6</td>
@@ -148,7 +148,7 @@
     <tr>    
         <td style="text-align:left">M3 x 25mm</td>
         <td style="text-align:center"> 
-	        <img src="../images/618ILD31i0L._AC_SL1156_.jpg" width=30% alt="618ILD31i0L._AC_SL1156_"> 
+	        <img src="../images/618ILD31i0L._AC_SL1156_.jpg" width=40% alt="618ILD31i0L._AC_SL1156_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/3pPhW11" target="_blank" > Amazon</a></td>
         <td style="text-align:left">9</td>
@@ -157,7 +157,7 @@
     <tr>    
         <td style="text-align:left">M3 Nuts</td>
         <td style="text-align:center"> 
-	        <img src="../images/61M2uwrhVVL._SL1100_.jpg" width=30% alt="61M2uwrhVVL._SL1100_"> 
+	        <img src="../images/61M2uwrhVVL._SL1100_.jpg" width=40% alt="61M2uwrhVVL._SL1100_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/36GSG5z" target="_blank" > Amazon</a></td>
         <td style="text-align:left">23</td>
@@ -166,7 +166,7 @@
     <tr>    
         <td style="text-align:left">M3 Insert</td>
         <td style="text-align:center"> 
-            <img src="../images/71RW5BLGT6L._AC_SL1100_.jpg" width=30% alt="71RW5BLGT6L._AC_SL1100_"> 
+            <img src="../images/71RW5BLGT6L._AC_SL1100_.jpg" width=40% alt="71RW5BLGT6L._AC_SL1100_"> 
         </td>        
         <td style="text-align:left"><a href = "https://amzn.to/31cG2YW" target="_blank" > Amazon</a></td>
         <td style="text-align:left">4</td>
@@ -175,7 +175,7 @@
     <tr>    
         <td style="text-align:left">M2 x 12mm</td>
         <td style="text-align:center"> 
-	        <img src="../images/61W-pyZZEPL._AC_SL1100_.jpg" width=30% alt="61W-pyZZEPL._AC_SL1100_"> 
+	        <img src="../images/61W-pyZZEPL._AC_SL1100_.jpg" width=40% alt="61W-pyZZEPL._AC_SL1100_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/36EdHxY" target="_blank" > Amazon</a></td>
         <td style="text-align:left">4</td>
@@ -184,7 +184,7 @@
     <tr>    
         <td style="text-align:left">M2 x 8mm</td>
         <td style="text-align:center"> 
-	        <img src="../images/7165gNNuyPL._AC_SL1200_.jpg" width=30% alt="7165gNNuyPL._AC_SL1200_"> 
+	        <img src="../images/7165gNNuyPL._AC_SL1200_.jpg" width=40% alt="7165gNNuyPL._AC_SL1200_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/36EdHxY" target="_blank" > Amazon</a></td>
         <td style="text-align:left">2</td>
@@ -193,7 +193,7 @@
     <tr>    
         <td style="text-align:left">M2 Nuts</td>
         <td style="text-align:center"> 
-	        <img src="../images/61ydtMG8UAL._SL1100_.jpg" width=30% alt="61ydtMG8UAL._SL1100_"> 
+	        <img src="../images/61ydtMG8UAL._SL1100_.jpg" width=40% alt="61ydtMG8UAL._SL1100_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/39IP0SB" target="_blank" > Amazon</a></td>
         <td style="text-align:left">2</td>
@@ -202,7 +202,7 @@
     <tr>    
         <td style="text-align:left">M2 Brass Insert</td>
         <td style="text-align:center"> 
-	        <img src="../images/61Mw5P0bfpL._SL1100_.jpg" width=30% alt="61Mw5P0bfpL._SL1100_"> 
+	        <img src="../images/61Mw5P0bfpL._SL1100_.jpg" width=40% alt="61Mw5P0bfpL._SL1100_"> 
         </td>
         <td style="text-align:left"><a href = "https://amzn.to/3vT9Rf3" target="_blank" > Amazon</a></td>
         <td style="text-align:left">4</td>

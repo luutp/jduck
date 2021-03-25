@@ -1,11 +1,16 @@
-<div style="text-align:left">
+<div style="text-align:center">
     <img src="images/android-chrome-512x512.png" width=50% alt="">
     <figcaption></figcaption>
 </div>
 
+<div style="text-align:center">
 <a href="https://www.amazon.com/dp/B08ZVBCT26?fbclid=IwAR0gwjj-hSZsaB4kF6pJWJAcfVp061Cgqmoh9smIQtiU6nPkkdqvsUPWj4I" title="Amazon" target = "_blank" class="md-button md-button--primary text-center">
-:fontawesome-brands-amazon: Buy
+Buy on Amazon
 </a>
+<a href="https://www.amazon.com/dp/B08ZVBCT26?fbclid=IwAR0gwjj-hSZsaB4kF6pJWJAcfVp061Cgqmoh9smIQtiU6nPkkdqvsUPWj4I" title="Amazon" target = "_blank" class="md-button text-center">
+Getting Started
+</a>
+</div>
 
 ## Product Summary
 !!! summary "Why jDuck?"

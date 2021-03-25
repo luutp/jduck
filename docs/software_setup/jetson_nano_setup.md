@@ -1,29 +1,26 @@
-## Setup Jetson Nano 2GB Developer Kit
+# Getting Started with Jetson Nano 2GB Developer Kit
 
-If you haven't already, go through the initial setup of Jetson Nano.<br>
-You can use your existing Jetson Nano set up (microSD card), as long as you have enough storage space left.
-
-???+ warning "Jetpack SDK Version"
+## Step 1: Download the Jetson Nano 2GB Developer Kit SD Card Image
+Download the correct version of the Jetpack SDK image to your laptop or PC.
+???+ warning "Compatible Jetpack SDK Version"
     The current version of jDuck containers only supports Jetson Nano SD card image flashed with JetPack 4.4.1. These containers will not work with other version of JetPack. The JetPack archive image is available at
     [JetPack SDK 4.4.1 archive](https://developer.nvidia.com/jetpack-sdk-441-archive)
 
-## Introduction
+## Step 2: Write Image to the microSD Card
+???+ info "Write Image to the microSD card"    
+    The instruction for writing the image to microSD card for different type of OS (e.g., Windows, Macos, or Linux) is well-documented on NVIDIA website and can be found at:
 
-![jetson-nano-labeled-01](../images/Sun_Mar_14_2021_1615739500737.png)
+    [:paperclip: Write Image to the microSD Card ](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#write){:target="_blank"}
 
-## Getting Started with Jetson Nano 2GB Developer Kit
+## Step 3: Setup and First Boot
+???+ info "Setup and First Boot"    
+    The setup can be done in two ways: 
 
-???+ hint "Getting Started with Jetson Nano 2GB Developer Kit"
+    1. With display monitor, keyboard, and mouse attached
+    2. Headless mode via remote control from another computer
 
-    For this, we'll assume you've set up your Jetson Nano using the **online Getting Started guide**.
-     - [Getting Started with Jetson Nano 2GB Developer Kit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit)
+    Detailed instruction is available at:
 
-### Step 1: Write Image to the microSD card 
-???+ hint "Jetpack SDK 4.4.1"
-    Supported Jet
-    [Write Image to the microSD card](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#write){:target="_blank"}
+    [:paperclip: Setup and First Boot](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-2gb-devkit#setup){:target="_blank"}
 
-### Step 2: Setup and First Boot
-<p align="center">
-<img src="images/.jpg" width=80% alt="">
-</p>
+    We would recommend method 1 since it is straight forward. Morever, the wifi connection and obtaining IP address after the first boot is very simple.
