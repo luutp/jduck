@@ -19,7 +19,6 @@ from traitlets.config.configurable import SingletonConfigurable
 # Custom Packages
 from jduck.DCMotor import DCMotor
 
-
 # ================================================================================
 
 
