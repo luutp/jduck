@@ -1,6 +1,7 @@
 - [Connect CSI camera to Jetson Nano board](#connect-csi-camera-to-jetson-nano-board)
 - [Connect Motor Driver to Jetson Nano Board](#connect-motor-driver-to-jetson-nano-board)
 - [Connect USB-C Power Cable](#connect-usb-c-power-cable)
+- [Power ON/OFF](#power-onoff)
 
 ## Connect CSI camera to Jetson Nano board
 To install a camera module, connect its flex ribbon cable into the camera connector (J5). Follow these steps:
@@ -10,7 +11,7 @@ To install a camera module, connect its flex ribbon cable into the camera connec
 3. **Gently press down on the connector latch until stops**. This may require two fingers, each at one end of the latch. Do not use excessive force.</li>
     
 <div style="text-align:center">
-    <img src="../images/jduck1b.gif" width=60% alt="">
+    <img src="../images/jduck1b.gif" width=80% alt="">
     <figcaption>Connect CSI camera to Jetson Nano</figcaption>
 </div>
 
@@ -31,7 +32,7 @@ We use 6 pins from J6 header on the Jetson Nano to the L298N driver.
     <tr>
         <td style="text-align:left">Pin 32</td>
         <td style="text-align:left">Pin 33</td>        
-        <td rowspan="3" style="text-align:center"><img src="../images/image_k1rop8JQvj.jpg" width=50% alt=""></td>        
+        <td rowspan="3" style="text-align:center"><img src="../images/image_k1rop8JQvj.jpg" width=80% alt=""></td>        
     </tr>
     <tr>
         <td style="text-align:left">Pin 36</td>
@@ -45,7 +46,7 @@ We use 6 pins from J6 header on the Jetson Nano to the L298N driver.
 </table>
 Details for the electrical wiring are available at. [:paperclip: Electrical wiring](electrical_wiring.md){:target="_blank"}
 <div style="text-align:center">
-    <img src="../images/jduck2b.gif" width=60% alt="">
+    <img src="../images/jduck2b.gif" width=80% alt="">
     <figcaption>Connect Motor Driver to Jetson Nano Board</figcaption>
 </div>
 
@@ -54,6 +55,24 @@ Details for the electrical wiring are available at. [:paperclip: Electrical wiri
 ## Connect USB-C Power Cable
 
 <div style="text-align:center">
-    <img src="../images/jduck3b.gif" width=60% alt="">
+    <img src="../images/jduck3b.gif" width=80% alt="">
     <figcaption>Connect USB-C power cable</figcaption>
 </div>
+
+## Power ON/OFF
+
+=== "Power ON"
+    Click the power button on the power bank to turn ON jDuck.
+    
+    A clear LED digital readout shows the accurate percentage of power level. No more guessing about the remaining power and when to recharge.
+    <div style="text-align:center">
+        <img src="../images/jduck4b.gif" width=80% alt="">
+        <figcaption>Power ON</figcaption>
+    </div>
+    
+=== "Power OFF"
+    Double-click the power button on the power bank to turn OFF jDuck.
+    <div style="text-align:center">
+        <img src="../images/jduck5b.gif" width=80% alt="">
+        <figcaption>Power OFF</figcaption>
+    </div>

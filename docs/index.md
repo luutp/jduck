@@ -4,7 +4,7 @@
     <a href="https://www.amazon.com/dp/B08ZVBCT26?fbclid=IwAR0gwjj-hSZsaB4kF6pJWJAcfVp061Cgqmoh9smIQtiU6nPkkdqvsUPWj4I" title="Amazon" target = "_blank" class="md-button md-button--primary text-center">
     Buy on Amazon
     </a>
-    <a href="https://www.amazon.com/dp/B08ZVBCT26?fbclid=IwAR0gwjj-hSZsaB4kF6pJWJAcfVp061Cgqmoh9smIQtiU6nPkkdqvsUPWj4I" title="Amazon" target = "_blank" class="md-button text-center">
+    <a href="https://luutp.github.io/jduck/hardware_setup/jduck_hardware_setup.html" title="Getting Started" target = "_blank" class="md-button text-center">
     Getting Started
     </a>
 </div>
