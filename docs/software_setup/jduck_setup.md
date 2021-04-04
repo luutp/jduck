@@ -30,3 +30,12 @@ bash ./build.sh
 ``` bash
 bash ./enable.sh
 ```
+
+??? info "Docker Tips"
+    Once you execute the enable.sh script, the containers are set to restart automatically. This means you can shut down your jDuck, and when you reboot the containers will run and you don't need to repeat this process.
+
+    To prevent the containers from starting automatically, just call the disable.sh script.
+    ``` bash
+        cd ~/jduck/Docker
+        bash ./disable.sh
+    ```
