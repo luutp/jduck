@@ -91,13 +91,6 @@ RUN apt install -y python3-smbus && pip3 install pyzmq
 RUN echo -e "\e[35m Install Jetson.GPIO \e[0m"
 RUN pip3 install Jetson.GPIO
 
-#===================================INSTALL TORCH2TRT=================================
-ENV TORCH2TRT_REPO_DIR=/opt/
-RUN cd ${TORCH2TRT_REPO_DIR} && \
-    git clone https://github.com/NVIDIA-AI-IOT/torch2trt && \
-    cd torch2trt && \
-    python3 setup.py install
-
 # ==================================INSTALL JETCAM=====================================
 RUN echo -e "\e[35m Install jetcam python package \e[0m"
 ENV JETCAM_REPO_DIR=/opt/
