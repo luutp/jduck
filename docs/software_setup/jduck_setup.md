@@ -37,6 +37,22 @@ Run all of the docker containers
 bash ./enable.sh
 ```
 
+## Open jupyterlab from host PC/laptop browser
+
+From your host PC/laptop browser, type in the following address:
+
+YOUR_JDUCK_IP_ADDRESS:8888/lab?
+
+password: jduck
+
+![jupyter_env](../images/2021-04-30_205804.jpg)
+
+## Open example Notebooks
+
+Go to jduck/notebooks for basic examples that control the robot via control panel or gamepad controller.
+
+![example](../images/2021-04-30_160007.jpg)
+
 ???+ info "Docker Tips"
     Once you execute the enable.sh script, the containers are set to restart automatically. This means you can shut down your jDuck, and when you reboot the containers will run and you don't need to repeat this process.
 
@@ -45,3 +61,11 @@ bash ./enable.sh
         cd ~/jduck/Docker
         bash ./disable.sh
     ```
+
+    Run "docker ps" to list containers that are currently running. The jduck:pwm and jduck:jupyter containers should be available after step 2.
+
+    ``` bash
+    sudo docker ps -a
+    ```
+
+    ![docker_ps](../images/2021-04-30_163712.jpg)
