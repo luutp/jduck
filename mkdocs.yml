@@ -116,16 +116,10 @@ nav:
       - jDuck hardware setup: hardware_setup/jduck_hardware_setup.md  
   - Software Setup:
       - Jetson Nano Setup: software_setup/jetson_nano_setup.md      
-      - JDuck Setup: software_setup/jduck_setup.md      
-      - Docker: 
-        - jupyter: software_setup/docker.md      
-        - Enable PWM: software_setup/docker/docker_enable_pwm.md      
+      - JDuck Setup: software_setup/jduck_setup.md            
   - Examples: 
       - Basic Motion: examples/basic_motion.md
-      - Teleoperation: examples/teleoperation.md
-      - Collision Avoidance: examples/collision_avoidance.md
-      - Road Following: examples/road_following.md
-      - Object Following: examples/object_following.md
+      - Teleoperation: examples/teleoperation.md      
   - Reference:      
       - Contributing: CONTRIBUTING.md
       - Changes: CHANGELOG.md      
