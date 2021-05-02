@@ -44,7 +44,7 @@ The product includes:
 - [Custom design and 3D-printed parts](hardware_setup/custom_parts.md)
 
 <div style="text-align:left"> 
-	<img src="images/wVePG2Dw.png" width=80% alt="jDuck"> 
+	<img src="images/wVePG2Dw.png" width=100% alt="jDuck"> 
 	<figcaption>jDuck components</figcaption> 
 </div>
 
