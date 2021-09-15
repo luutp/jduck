@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block custom_css %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+{% endblock custom_css %}
+{% block content %}
+<!-- <h3 class="mt-5">Live Streaming</h3> -->
+<!-- <img src="{{ url_for('main.video_feed') }}" width="100%"> -->
+<div class="row">
+    <!-- order-card start -->
+    <div class="col-md-6 col-xl-3">
+        <div class="card bg-c-blue order-card">
+            <div class="card-body">
+                <h6 class="text-white">System Info</h6>
+                <h2 class="text-right text-white"><i class='fas fa-microchip float-left'></i>
+                    <span id="cpu_usage"></span></h2>
+                <p class="m-b-0">Completed Orders<span class="float-right">351</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+{% block custom_js %}
+<!-- Custom Scripts -->
+<script src="{{ url_for('static', filename='main.js') }}"> </script>
+{% endblock custom_js %}

@@ -1,3 +1,97 @@
+:root {
+    /* Colors  */
+    --color-white: #fff;
+    --color-gray-100: #f8f9fa;
+    --color-gray-200: #e9ecef;
+    --color-gray-300: #dee2e6;
+    --color-gray-400: #ced4da;
+    --color-gray-500: #adb5bd;
+    --color-gray-600: #6c757d;
+    --color-gray-700: #495057;
+    --color-gray-800: #343a40;
+    --color-gray-900: #212529;
+    --color-black: #000;
+    /* Bootstrap Theme */
+    --color-primary: #0d6efd;
+    --color-secondary: #6c757d;
+    --color-success: #198754;
+    --color-info: #0dcaf0;
+    --color-warning: #ffc107;
+    --color-danger: #dc3545;
+    --color-light: #f8f9fa;
+    --color-dark: #212529;
+    /* Space */
+    --unit-spacing: 20px;
+    /* Font */
+    --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --fontsize-small: 10px;
+    --fontsize-normal: 12px;
+    --fontsize-large: 16px;
+    --fontweight-normal: 400px;
+    --fontweight-bold: 800px;
+}
+
+
+.bg-c-blue {
+    background: linear-gradient(45deg, #4099ff, #73b4ff);
+}
+
+.text-c-blue {
+    color: #4099ff;
+}
+
+.b-c-blue {
+    border: 1px solid #4099ff;
+}
+
+.bg-c-red {
+    background: linear-gradient(45deg, #FF5370, #ff869a);
+}
+
+.text-c-red {
+    color: #FF5370;
+}
+
+.b-c-red {
+    border: 1px solid #FF5370;
+}
+
+.bg-c-green {
+    background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+}
+
+.text-c-green {
+    color: #2ed8b6;
+}
+
+.b-c-green {
+    border: 1px solid #2ed8b6;
+}
+
+.bg-c-yellow {
+    background: linear-gradient(45deg, #FFB64D, #ffcb80);
+}
+
+.text-c-yellow {
+    color: #FFB64D;
+}
+
+.b-c-yellow {
+    border: 1px solid #FFB64D;
+}
+
+.bg-c-purple {
+    background: linear-gradient(45deg, #7759de, #9a84e6);
+}
+
+.text-c-purple {
+    color: #7759de;
+}
+
+.b-c-purple {
+    border: 1px solid #7759de;
+}
+
 body {
     background: #fafafa;
     color: #333333;
@@ -56,3 +150,5 @@ h6 {
 .account-heading {
     font-size: 2.5rem;
 }
+
+/* Cards */

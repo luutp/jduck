@@ -12,6 +12,8 @@ Created on: 2021/07/06
 #%%
 # ================================IMPORT PACKAGES====================================
 
+from livereload import Server
+
 # Custom Packages
 from webUI import create_app
 
@@ -19,4 +21,6 @@ from webUI import create_app
 app = create_app()
 
 if __name__ == "__main__":
-    app.run(debug=app.config.get("DEBUG"))
+    # app.run(debug=app.config.get("DEBUG"))
+    server = Server(app.wsgi_app)
+    server.serve()

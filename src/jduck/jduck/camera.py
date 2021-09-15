@@ -21,6 +21,7 @@ from abc import abstractclassmethod
 
 # Visualization Packages
 import cv2
+import matplotlib.pyplot as plt
 
 # Custom Packages
 from utils.logging_config import logger as logging
@@ -32,6 +33,10 @@ script_dir = os.path.abspath(os.path.dirname(__file__))
 project_dir = os.path.dirname(script_dir)
 
 # =====================================START=================================
+
+
+def bgr8_to_jpeg(value, quality=75):
+    return bytes(cv2.imencode(".jpg", value)[1])
 
 
 class BaseCamera(ABC):
@@ -91,10 +96,11 @@ class CSICamera(BaseCamera):
         self._frame_height = frame_height
         self._fps = fps
         self._flip_method = 0
+        self._values = None
         try:
             self.cam = cv2.VideoCapture(self._gst_str(), cv2.CAP_GSTREAMER)
 
-            re, image = self.cam.read()
+            re, frame = self.cam.read()
 
             if not re:
                 raise RuntimeError("Could not read image from camera.")
@@ -102,7 +108,10 @@ class CSICamera(BaseCamera):
                 logging.info("CSI Camera Initiated Successfully")
         except Exception as e:
             logging.error(e)
+            self.stop()
             raise RuntimeError("Could not initialize camera.  Please see error trace.")
+        self.values = frame
+        self.start()
 
     @property
     def flip_method(self):
@@ -111,6 +120,14 @@ class CSICamera(BaseCamera):
     @flip_method.setter
     def flip_method(self, inputVal):
         self._flip_method = inputVal
+
+    @property
+    def values(self):
+        return self._values
+
+    @values.setter
+    def values(self, inputVal):
+        self._values = inputVal
 
     def _gst_str(self):
         capture_width = self.frame_width
@@ -138,55 +155,76 @@ class CSICamera(BaseCamera):
             )
         )
 
+    def start(self):
+        if not self.cam.isOpened():
+            self.cam.open(self._gst_str(), cv2.CAP_GSTREAMER)
+        if not hasattr(self, "thread") or not self.thread.isAlive():
+            self.thread = threading.Thread(target=self.web_stream)
+            self.thread.start()
+
+    def stop(self):
+        if hasattr(self, "cam"):
+            self.cam.release()
+        if hasattr(self, "thread"):
+            self.thread.join()
+
+    def restart(self):
+        self.stop()
+        self.start()
+
     def get_frame(self):
-        re, image = self.cam.read()
+        re, frame = self.cam.read()
         if re:
-            return image
+            self.values = frame
+            return frame
         else:
             raise RuntimeError("Could not read image from camera")
 
-    def live_stream(self):
-        if self.cam.isOpened():
-            while True:
-                success, frame = self.cam.read()
-                if not success:
-                    break
-                else:
-                    ret, buffer = cv2.imencode(".jpg", frame)
-                    frame = buffer.tobytes()
-                    yield (
-                        b"--frame\r\n"
-                        b"Content-Type: image/jpeg\r\n\r\n" + frame + b"\r\n"
-                    )
+    def show_frame(self):
+        frame = self.get_frame()
+        img_data = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+        fig = plt.figure()
+        ax = fig.add_subplot(111)
+        ax.imshow(img_data)
+        ax.set_aspect("equal")
+        ax.axis("off")
+
+    def web_stream(self):
+        while True:
+            success, frame = self.cam.read()
+            if not success:
+                break
+            else:
+                ret, buffer = cv2.imencode(".jpg", frame)
+                frame = buffer.tobytes()
+                yield (
+                    b"--frame\r\n" b"Content-Type: image/jpeg\r\n\r\n" + frame + b"\r\n"
+                )
+
+    @staticmethod
+    def instance(*args, **kwargs):
+        return CSICamera(*args, **kwargs)
 
 
-# =====================================MAIN==========================================
+# # =====================================MAIN==========================================
 
-
-def main():
-    cam = CSICamera()
-    cam.live_stream()
-
-
+# # # def main():
+# cam = CSICamera()
+# print(cam)
+# #%%
+# cam.stop()
+# #%%
+# cam.show_frame()
+# #%%
+# cam.start()
+# #%%
+# cam.web_stream()
+#%%
+# cam.live_stream()
 # main()
 #%%
 # =====================================DEBUG=========================================
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 # =========================================================================
-
-
-# def gen_frames():  # generate frame by frame from camera
-#     cap = cv2.VideoCapture(gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER)
-#     if cap.isOpened():
-#         while True:
-#             success, frame = cap.read()
-#             if not success:
-#                 break
-#             else:
-#                 ret, buffer = cv2.imencode(".jpg", frame)
-#                 frame = buffer.tobytes()
-#                 yield (
-#                     b"--frame\r\n" b"Content-Type: image/jpeg\r\n\r\n" + frame + b"\r\n"
-#                 )
